@@ -65,7 +65,7 @@ function FaqItem({ q, a, isOpen, onToggle, idx }) {
 export default function FAQ({
   eyebrow = "FAQ",
   heading = "Questions teams ask before they decide.",
-  sub = "Short, plain-English answers from the SYNC team.",
+  sub = "Answers from the SYNC team.",
   faqs = DEFAULT_FAQS,
 }) {
   const [openIdx, setOpenIdx] = useState(0);
