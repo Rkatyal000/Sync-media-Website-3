@@ -5,23 +5,23 @@ import Reveal from "./Reveal";
 const DEFAULT_FAQS = [
   {
     q: "What is single-source cross-media measurement?",
-    a: "SYNC answers this by connecting exposure, audience de-duplication and outcome signals in one explainable measurement framework.",
+    a: "Single-source cross-media measurement means measuring TV, OTT, CTV, YouTube, mobile and commerce exposure from the same observed audience source, then connecting those exposures to outcomes. SYNC helps brands understand who saw what, where they saw it, how often they saw it, and what happened after.",
   },
   {
     q: "Why does de-duplication matter?",
-    a: "SYNC answers this by connecting exposure, audience de-duplication and outcome signals in one explainable measurement framework.",
+    a: "De-duplication shows the real audience reached across TV, OTT, CTV, YouTube, mobile and commerce, not the inflated total created by adding platform reports together. Without de-duplication, brands may keep paying to reach the same people again and again, creating hidden media wastage. It also reveals the true CPM — the real cost paid for unique online ad exposures — so teams can separate genuine incremental reach from repeated impressions.",
   },
   {
     q: "What outcomes can SYNC measure?",
-    a: "SYNC answers this by connecting exposure, audience de-duplication and outcome signals in one explainable measurement framework.",
+    a: "SYNC can connect media exposure to downstream consumer actions such as brand search, commerce search, app activity, website behaviour and add-to-cart events. This helps brands move beyond impressions and understand which media combinations are actually influencing business outcomes.",
   },
   {
     q: "Who is this useful for?",
-    a: "SYNC answers this by connecting exposure, audience de-duplication and outcome signals in one explainable measurement framework.",
+    a: "SYNC is useful for advertisers, media agencies, broadcasters, OTT platforms, publishers and marketing leaders who need a single view of cross-media reach, frequency, overlap and outcomes. It is built for teams that want better planning, sharper optimisation and stronger proof of media effectiveness.",
   },
   {
     q: "How does this differ from platform reporting?",
-    a: "SYNC answers this by connecting exposure, audience de-duplication and outcome signals in one explainable measurement framework.",
+    a: "Platform reporting shows performance inside one platform's own environment. SYNC measures across platforms, screens and outcomes, so brands can see the full media journey instead of separate channel snapshots. That means clearer attribution, better de-duplication and more confident budget decisions.",
   },
 ];
 
