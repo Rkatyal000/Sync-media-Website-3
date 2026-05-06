@@ -79,6 +79,7 @@ export default function AudienceFlowLoop({ steps = [] }) {
               <span className="afl-list-meta">
                 <span className="afl-list-index">{String(i + 1).padStart(2, "0")}</span>
                 <span className="afl-list-label">{s.label}</span>
+                {s.sub ? <span className="afl-list-sub">{s.sub}</span> : null}
               </span>
             </li>
           );
@@ -149,6 +150,7 @@ export default function AudienceFlowLoop({ steps = [] }) {
               <span className="afl-node-meta">
                 <span className="afl-node-index">{String(i + 1).padStart(2, "0")}</span>
                 <span className="afl-node-label">{s.label}</span>
+                {s.sub ? <span className="afl-node-sub">{s.sub}</span> : null}
               </span>
             </div>
           );

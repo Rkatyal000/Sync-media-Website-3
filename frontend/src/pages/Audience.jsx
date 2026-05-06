@@ -69,12 +69,18 @@ const QUESTIONS = [
 ];
 
 const FLOW = [
-  { label: "Exposure",      Icon: Eye },
-  { label: "Behaviour",     Icon: Activity },
-  { label: "Propensity",    Icon: Sparkles },
-  { label: "Micro-Flights", Icon: Layers },
-  { label: "Activation",    Icon: PlayCircle },
-  { label: "Learning Loop", Icon: RefreshCw },
+  { label: "Exposure",      sub: "Cross-screen capture",  Icon: Eye },
+  { label: "Behaviour",     sub: "Post-exposure actions", Icon: Activity },
+  { label: "Propensity",    sub: "Who responds next",     Icon: Sparkles },
+  { label: "Micro-Flights", sub: "Budget moves to lift",  Icon: Layers },
+  { label: "Activation",    sub: "In-flight deployment",  Icon: PlayCircle },
+  { label: "Learning Loop", sub: "Every run sharpens",    Icon: RefreshCw },
+];
+
+const FLOW_STATS = [
+  { value: "6",   label: "Connected stages" },
+  { value: "24h", label: "Signal refresh cadence" },
+  { value: "∞",   label: "Compounding learning" },
 ];
 
 /* Hero illustration: floating screen sources funnelling into "audience model" */
@@ -405,16 +411,32 @@ export default function Audience() {
       </section>
 
       {/* SYSTEM FLOW */}
-      <section className="tile">
-        <div className="container">
+      <section className="tile aud-flow-section">
+        <div className="aud-flow-aurora" aria-hidden="true">
+          <span className="aud-flow-aurora-a" />
+          <span className="aud-flow-aurora-b" />
+          <span className="aud-flow-aurora-grid" />
+        </div>
+        <div className="container aud-flow-container">
           <Reveal>
-            <div style={{ maxWidth: 820 }}>
+            <div className="aud-flow-head">
               <span className="eyebrow">How it works</span>
-              <h2>From exposure to activation — one continuous loop.</h2>
+              <h2 className="aud-flow-title">From exposure to activation — one continuous loop.</h2>
+              <p className="aud-flow-sub">Six connected stages that turn every campaign into sharper intelligence for the next one.</p>
             </div>
           </Reveal>
           <Reveal delay={120}>
             <AudienceFlowLoop steps={FLOW} />
+          </Reveal>
+          <Reveal delay={220}>
+            <div className="aud-flow-stats" data-testid="aud-flow-stats">
+              {FLOW_STATS.map((s) => (
+                <div className="aud-flow-stat" key={s.label}>
+                  <div className="aud-flow-stat-value">{s.value}</div>
+                  <div className="aud-flow-stat-label">{s.label}</div>
+                </div>
+              ))}
+            </div>
           </Reveal>
         </div>
       </section>
