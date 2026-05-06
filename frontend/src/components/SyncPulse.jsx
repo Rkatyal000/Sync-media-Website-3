@@ -491,6 +491,21 @@ export default function SyncPulse() {
               loading="lazy"
             />
           </div>
+
+          <div className="sp-stats" data-testid="sp-stats">
+            <div className="sp-stat">
+              <div className="sp-stat-value">TV · CTV</div>
+              <div className="sp-stat-label">YouTube &amp; Digital — one view</div>
+            </div>
+            <div className="sp-stat">
+              <div className="sp-stat-value">&lt; 60s</div>
+              <div className="sp-stat-label">Data refresh latency</div>
+            </div>
+            <div className="sp-stat">
+              <div className="sp-stat-value">Android</div>
+              <div className="sp-stat-label">iOS coming soon</div>
+            </div>
+          </div>
         </motion.div>
 
         {/* RIGHT — PHONE */}

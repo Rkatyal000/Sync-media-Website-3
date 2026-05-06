@@ -18,3 +18,8 @@ User shared the GitHub repo `Sync-media-Website-3` and asked to:
 
 ## Backlog / Next
 - None requested.
+
+## Iteration 2 — Fill blank space in Sync Pulse section
+- Added a 3-tile "proof stats" strip below the Kantar trust badge in `SyncPulse.jsx` (TV · CTV / < 60s refresh / Android + iOS coming soon) — fills the vertical gap between the phone column and the shorter left copy.
+- New CSS `.sp-stats` + `.sp-stat` in `index.css` with responsive breakpoint at 520px (single column) for clean wrap on mobile.
+- Tightened mobile gap from 64px to 32px and reduced section top padding so text wraps cleanly without awkward blank regions.
